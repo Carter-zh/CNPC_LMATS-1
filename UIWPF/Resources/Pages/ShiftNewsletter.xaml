@@ -70,8 +70,6 @@
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="1" BorderThickness="1">
             <TextBox x:Name="dateBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                      Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
 
 
@@ -84,8 +82,6 @@
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="1" BorderThickness="1">
             <TextBox x:Name="shiftBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                      Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
@@ -95,12 +91,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="2"
                    Grid.Row="1" BorderThickness="1">
-            <TextBox x:Name="onDutyBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 2-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="2" BorderThickness="1">
@@ -109,10 +102,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="2" BorderThickness="1">
-            <TextBox x:Name="shiftDeepBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="2" BorderThickness="1">
@@ -121,10 +111,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="2" BorderThickness="1">
-            <TextBox x:Name="layerBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="2" BorderThickness="1">
@@ -133,12 +120,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="2"
                    Grid.Row="2" BorderThickness="1">
-            <TextBox x:Name="drillDeepBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 3-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="3" Grid.RowSpan="3" BorderThickness="1">
@@ -157,13 +141,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2" Grid.ColumnSpan="6"
                    Grid.Row="4" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="situationDeepBox" HorizontalContentAlignment="Left"
-                     VerticalContentAlignment="Top" Margin="10"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     TextWrapping="Wrap"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 4-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="6" Grid.RowSpan="2" BorderThickness="1">
@@ -197,40 +177,25 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="7" BorderThickness="1">
-            <TextBox x:Name="bitNumBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="7" BorderThickness="1">
-            <TextBox x:Name="bitSizeBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="7" BorderThickness="1">
-            <TextBox x:Name="bitCataBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="7" BorderThickness="1">
-            <TextBox x:Name="totalFootageBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="2"
                    Grid.Row="7" BorderThickness="1">
-            <TextBox x:Name="drillTimeBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 5-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="8" BorderThickness="1">
@@ -240,12 +205,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2" Grid.ColumnSpan="6"
                    Grid.Row="8" BorderThickness="1" Grid.RowSpan="1">
-            <TextBox x:Name="arctitectureBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 6-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="9" Grid.RowSpan="3" BorderThickness="1">
@@ -259,10 +221,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="9" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="drillPressureBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="9" BorderThickness="1" Grid.RowSpan="2">
@@ -271,10 +230,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="9" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="turnTblSpeedBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="1"
                    Grid.Row="9" BorderThickness="1" Grid.RowSpan="2">
@@ -283,10 +239,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="7"
                    Grid.Row="9" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="displacementBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="11" BorderThickness="1">
@@ -295,10 +248,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="11" BorderThickness="1">
-            <TextBox x:Name="pumpPressureBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="11" BorderThickness="1">
@@ -307,10 +257,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="11" BorderThickness="1">
-            <TextBox x:Name="torqueBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="1"
                    Grid.Row="11" BorderThickness="1">
@@ -319,12 +266,8 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="7"
                    Grid.Row="11" BorderThickness="1">
-            <TextBox x:Name="hangingWhtBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
         </Border>
-        
+
         <!--Row 7-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="12" Grid.RowSpan="7" BorderThickness="1">
@@ -365,45 +308,26 @@
 
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="liquidTypeBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="liquidDensityBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="liquidViscosityBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="liquidDehyBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="1"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="mudPieBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="7"
                    Grid.Row="13" BorderThickness="1">
-            <TextBox x:Name="priCutBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
         </Border>
 
         <Border BorderBrush="Black"  Grid.Column="2"
@@ -439,45 +363,26 @@
 
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="finCutBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="liquidSandInfoBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="frictionCoefBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="thInfoBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="1"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="sixInfoBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="7"
                    Grid.Row="15" BorderThickness="1">
-            <TextBox x:Name="HTHPDehyBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
         </Border>
 
         <Border BorderBrush="Black"  Grid.Column="2"
@@ -513,47 +418,28 @@
 
         <Border BorderBrush="Black"  Grid.Column="2"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="liquidPHBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="CommSoilBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="solidPhaseBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="ClIonBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="1"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="salinityBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="7"
                    Grid.Row="18" BorderThickness="1">
-            <TextBox x:Name="treatAgentBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
         </Border>
-        
+
         <!--Row 8-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="19" BorderThickness="1">
@@ -567,10 +453,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="3" Grid.ColumnSpan="2"
                    Grid.Row="19" BorderThickness="1">
-            <TextBox x:Name="lateDrillDeepBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="19" BorderThickness="1">
@@ -579,12 +462,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" Grid.ColumnSpan="2"
                    Grid.Row="19" BorderThickness="1">
-            <TextBox x:Name="lateDrillTimeBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 9-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="20" Grid.RowSpan="4" BorderThickness="1">
@@ -593,13 +473,9 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2" Grid.ColumnSpan="6"
                    Grid.Row="20" BorderThickness="1" Grid.RowSpan="4">
-            <TextBox x:Name="ithGasDisBox" HorizontalContentAlignment="Left"
-                     VerticalContentAlignment="Top" AllowDrop="True" Margin="10"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     TextWrapping="Wrap"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <!--Row 10-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="24" Grid.RowSpan="3" BorderThickness="1">
@@ -608,32 +484,20 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2" Grid.ColumnSpan="2"
                 Grid.Row="25" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="projBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
-        
+
         <Border BorderBrush="Black"  Grid.Column="4"
                    Grid.Row="25" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="wellSegmentBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="5"
                    Grid.Row="25" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="sampleBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="6" 
                    Grid.Row="25" Grid.ColumnSpan="2" BorderThickness="1" Grid.RowSpan="2">
-            <TextBox x:Name="noteBox" HorizontalContentAlignment="Center"
-                     VerticalContentAlignment="Center"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2"
                 Grid.Row="24" BorderThickness="1" Grid.ColumnSpan="2">
@@ -655,7 +519,7 @@
             <Label Content="备注" HorizontalContentAlignment="Center" VerticalAlignment="Center"
                BorderBrush="Black"/>
         </Border>
-        
+
         <!--Row 11-->
         <Border BorderBrush="Black"  Grid.Column="1"
                    Grid.Row="27" Grid.RowSpan="3" BorderThickness="1">
@@ -664,11 +528,7 @@
         </Border>
         <Border BorderBrush="Black"  Grid.Column="2" Grid.ColumnSpan="6"
                    Grid.Row="27" BorderThickness="1" Grid.RowSpan="3">
-            <TextBox x:Name="equipAnal" HorizontalContentAlignment="Left"
-                     VerticalContentAlignment="Top" AllowDrop="True"
-                     TextWrapping="Wrap" Margin="10"
-                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                     Style="{StaticResource MaterialDesignDataGridComboBoxEditableTextBox}"/>
+
         </Border>
     </Grid>
 </Page>

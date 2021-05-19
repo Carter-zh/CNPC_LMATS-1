@@ -14,9 +14,12 @@ namespace BLL
         {
             UserDB UserDB = new UserDB();
             Model.LoginForm.UserInfo user = UserDB.SelectUser(userName, password);
-            if(user != null)
+            if(user == null)
             {
-                
+                string sql = "update  table_name set canUpdate = 1";
+                DbManager.Ins.ExecuteNonquery(sql);
+
+
                 return user;
             }
             else

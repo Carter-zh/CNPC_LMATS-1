@@ -132,14 +132,12 @@
                             <StackPanel Orientation="Horizontal">
                                 <Label Content="&#xE74E;"
                                        FontFamily="Segoe MDL2 Assets"
-                                       Foreground="White"
-                                       Margin="-10,0,0,0"/>
+                                       Foreground="White"/>
                                 <ContentPresenter Content="保存"/>
                             </StackPanel>
                         </MenuItem.Header>
 
                     </MenuItem>
-                    
                     <Separator/>
                     <MenuItem Header="导入" Height="20">
                         <MenuItem Header="随钻导入"/>
@@ -156,7 +154,7 @@
                 </MenuItem>
                 <MenuItem Header="菜单" Height="20" Foreground="White" FontSize="14"/>
                 <MenuItem Header="基础资料" Height="20" Foreground="White" FontSize="14">
-                    <MenuItem Header="基本数据" Name="D_1" Height="20" Click="formSwitch_Click"/>
+                    <MenuItem Header="基本数据"  Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="施工队伍"  Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="层位设计"  Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="钻头设计"  Height="20" Click="formSwitch_Click"/>
@@ -167,8 +165,6 @@
 
                 </MenuItem>
                 <MenuItem Header="录井班报" Height="20" Foreground="White" FontSize="14">
-                    <MenuItem Header="录井班报编辑" Height="20" Click="newsletter_Click"/>
-                    <Separator/>
                     <MenuItem Header="班报基本数据" Name="B_1_1" Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="钻井工况" Name="B_1_3" Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="钻头数据" Name="B_1_4" Height="20" Click="formSwitch_Click"/>
@@ -192,20 +188,20 @@
                 </MenuItem>
                 <MenuItem Header="资料整理" Height="20" Foreground="White" FontSize="14">
                     <MenuItem Header="资料编辑" Height="20">
-                        <MenuItem Header="基本数据表" Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="录井工作量统计表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="地层分层数据表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="油气显示统计表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="钻井液性能分段统计表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="测井项目统计表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="钻井取心统计表"  Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="基本数据表" Name="D_1" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="录井工作量统计表" Name="D_3" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="地层分层数据表" Name="D_2" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="油气显示统计表" Name="D_4" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="钻井液性能分段统计表" Name="D_5"  Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="测井项目统计表" Name="D_6" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="钻井取心统计表" Name="D_7" Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="井壁取心统计表"  Height="20" Click="formSwitch_Click"/>
-                        <MenuItem Header="分析化验样品统计表"  Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="分析化验样品统计表" Name="D_8" Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="录井综合图"  Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="钻井取心录井图"  Height="20" Click="formSwitch_Click"/>
                     </MenuItem>
                     <MenuItem Header="浏览打印" Height="20">
-                        <MenuItem Header="基本数据表" Height="20" Click="formSwitch_Click"/>
+                        <MenuItem Header="基本数据表" Height="20" Click="Print_Click"/>
                         <MenuItem Header="录井工作量统计表"  Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="地层分层数据表"  Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="油气显示统计表"  Height="20" Click="formSwitch_Click"/>
@@ -251,16 +247,16 @@
                 </MenuItem>
 
                 <MenuItem Header="评价录井" Height="20" Foreground="White" FontSize="14">
-                    <MenuItem Header="泥页岩密度分析" Name="B_9" Height="20"/>
-                    <MenuItem Header="碳酸盐含量分析" Name="B_10" Height="20"/>
-                    <MenuItem Header="定量荧光录井" Name="B_11" Height="20"/>
-                    <MenuItem Header="岩石热解地球化学录井" Name="B_12" Height="20"/>
-                    <MenuItem Header="岩石热蒸发烃气相色谱录井" Name="B_14" Height="20"/>
-                    <MenuItem Header="轻烃录井" Name="B_15" Height="20"/>
-                    <MenuItem Header="核磁共振录井" Name="B_16" Height="20"/>
-                    <MenuItem Header="X射线衍射矿物录井" Name="B_17" Height="20"/>
-                    <MenuItem Header="X射线荧光元素录井" Name="B_18" Height="20"/>
-                    <MenuItem Header="自然伽马能谱录井" Name="B_19" Height="20"/>
+                    <MenuItem Header="泥页岩密度分析" Name="B_9" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="碳酸盐含量分析" Name="B_10" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="定量荧光录井" Name="B_11" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="岩石热解地球化学录井" Name="B_12" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="岩石热蒸发烃气相色谱录井" Name="B_14" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="轻烃录井" Name="B_15" Height="20" Click="formSwitch_Click"/>
+                    <MenuItem Header="核磁共振录井" Name="B_16" Height="20"  Click="formSwitch_Click"/>
+                    <MenuItem Header="X射线衍射矿物录井" Name="B_17" Height="20" Click="formSwitch_Click"/>
+                    <MenuItem Header="X射线荧光元素录井" Name="B_18" Height="20" Click="formSwitch_Click"/>
+                    <MenuItem Header="自然伽马能谱录井" Name="B_19" Height="20" Click="formSwitch_Click"/>
 
                 </MenuItem>
                 <MenuItem Header="帮助" Height="20" Foreground="White" FontSize="14">

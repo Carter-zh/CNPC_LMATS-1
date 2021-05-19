@@ -102,7 +102,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBUtils\DbHelper.cs" />
     <Compile Include="DBUtils\DbManager.cs" />
     <Compile Include="DBUtils\modify_B_2.cs" />
     <Compile Include="DBUtils\UserDB.cs" />
@@ -131,7 +130,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resourses\cnpc_lmats.sql" />
+    <Content Include="resourses\cnpc_lmats1.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

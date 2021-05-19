@@ -25,7 +25,7 @@ namespace UIWPF.Resources.Pages
         string formName = null;
         string formTitle = null;
         string sql;
-        string table;
+        public string table;
         MySqlConnectionStringBuilder connectionString = new MySqlConnectionStringBuilder();
         public MySqlConnection connection;
         MySqlDataAdapter adapter;
@@ -71,7 +71,7 @@ namespace UIWPF.Resources.Pages
             {
                 conn.Close();
             }
-            
+
         }
 
         public void loadData()
@@ -93,7 +93,7 @@ namespace UIWPF.Resources.Pages
             }
 
             //dt = DbManager.Ins.ExcuteDataTable(sql);
-            
+
             connectionString.Server = "localhost";
             connectionString.UserID = "root";
             connectionString.Password = "123456";
@@ -113,30 +113,30 @@ namespace UIWPF.Resources.Pages
             //dtGrid.ItemsSource = dt.DefaultView;
 
             string headerName = null;
-            
+
             //update the commented form name
             //Change the header
             if (Model.Form_B.FormKeyValuePairB.formBDIc.TryGetValue(formKey, out formTitle))
             {
-                
+
             }
             else
             {
                 MessageBox.Show(formKey + " naming failure.");
                 return;
             }
-            
+
             foreach (var items in dtGrid.Columns)
             {
                 if (Model.Form_B.FormKeyValuePairB.formBNameDIc.TryGetValue(items.Header.ToString(), out headerName))
                 {
-                    
+
                 }
                 //else if(Model.Form_B.FormKeyValuePairB.descr_dilling_coring_b3.TryGetValue(items.Header.ToString(), out headerName))
                 //{
-                    
+
                 //}
-                
+
                 //MessageBox.Show(items.Header.ToString());
 
                 items.Header = headerName;
@@ -157,11 +157,26 @@ namespace UIWPF.Resources.Pages
 
             rows = adapter.Update(data);
             if (rows != 0)
+            {
                 MessageBox.Show(table + " " + rows + "行更新成功");
+                string und_sql = "update  table_name set canUpdate = 0 where table_name = @table";
+                List<MySqlParameter> Par = new List<MySqlParameter>();
+                Par.Add(new MySqlParameter("@table", table));
+                DbManager.Ins.ExecuteNonquery(und_sql, Par.ToArray());
+            }
             else
             {
-                MessageBox.Show(table  + " 更新失败！！！");
+                MessageBox.Show(table + " 更新失败！！！");
             }
+            //List<MySqlParameter> par_add = new List<MySqlParameter>();
+            //DataTable dt = new DataTable();
+            //par_add.Add(new MySqlParameter("@table", table));
+            //string sql = "select * from table_name where table_name = @table";
+            //dt = DbManager.Ins.ExcuteDataTable(sql, par_add.ToArray());
+            //DataRow[] dtrows = dt.Select();
+            ////int can = (int)dtrows[0][1];
+            //string outp = dtrows[0][1].ToString();
+            //MessageBox.Show(table + ": " + outp);
             return rows;
 
         }
@@ -177,11 +192,14 @@ namespace UIWPF.Resources.Pages
             return formName;
         }
 
-        public string getFormTitle()
+        public string getFormTitle(string header)
         {
-            if (formTitle == null)
+            //if (formTitle == null)
+            //    return "Name Not Found";
+            //return formTitle;
+            if (header == null)
                 return "Name Not Found";
-            return formTitle;
+            return header;
         }
     }
 }
