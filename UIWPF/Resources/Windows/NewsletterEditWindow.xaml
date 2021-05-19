@@ -27,8 +27,8 @@
                     <Button x:Name="Push" Content="提交班报"
                             Style="{StaticResource MaterialDesignFlatButton}"
                             Foreground="White"
-                            FontFamily="微软雅黑"/>
-                    <Button/>
+                            FontFamily="微软雅黑" Click="Push_Click"/>
+
                     <Button x:Name="History" Content="班报历史"
                             Style="{StaticResource MaterialDesignFlatButton}"
                             Foreground="White"

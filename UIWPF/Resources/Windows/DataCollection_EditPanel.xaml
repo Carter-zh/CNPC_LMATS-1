@@ -165,6 +165,8 @@
 
                 </MenuItem>
                 <MenuItem Header="录井班报" Height="20" Foreground="White" FontSize="14">
+                    <MenuItem Header="录井班报编辑"  Height="20" Click="newsletter_Click"/>
+                    <Separator/>
                     <MenuItem Header="班报基本数据" Name="B_1_1" Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="钻井工况" Name="B_1_3" Height="20" Click="formSwitch_Click"/>
                     <MenuItem Header="钻头数据" Name="B_1_4" Height="20" Click="formSwitch_Click"/>
@@ -201,7 +203,7 @@
                         <MenuItem Header="钻井取心录井图"  Height="20" Click="formSwitch_Click"/>
                     </MenuItem>
                     <MenuItem Header="浏览打印" Height="20">
-                        <MenuItem Header="基本数据表" Height="20" Click="Print_Click"/>
+                        <MenuItem Header="基本数据表" Name ="b1" Height="20" Click="Print_Click"/>
                         <MenuItem Header="录井工作量统计表"  Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="地层分层数据表"  Height="20" Click="formSwitch_Click"/>
                         <MenuItem Header="油气显示统计表"  Height="20" Click="formSwitch_Click"/>

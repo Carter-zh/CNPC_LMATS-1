@@ -22,8 +22,10 @@ namespace UIWPF.Resources.Windows
         //Pages.Form_B.B_2 b_2 = new Pages.Form_B.B_2();
         Pages.FormPage FormPage = new Pages.FormPage();
         Pages.ShiftNewsletter Print = new Pages.ShiftNewsletter();
+        
         string table;
         string table_num;
+        DataTable dt = new DataTable();
         public DataCollection_EditPanel()
         {
             InitializeComponent();
@@ -31,10 +33,17 @@ namespace UIWPF.Resources.Windows
             this.testFrame.Navigate(new Pages.WelcomePage());
         }
 
+        public int updateCan()
+        {
+            string sql = "update  table_name set canUpdate = 0 where table_name = @table";
+            List<MySqlParameter> Par = new List<MySqlParameter>();
+            Par.Add(new MySqlParameter("@table", table));
+            return DbManager.Ins.ExecuteNonquery(sql, Par.ToArray());
+        }
         private void save_Click(object sender, RoutedEventArgs e)
         {
             //string select = "select * from ";
-            //select += FormPage.getFormName();
+            // select += FormPage.getFormName();
             //MySqlConnectionStringBuilder connectionString = new MySqlConnectionStringBuilder();
             //connectionString.Server = "localhost";
             //connectionString.UserID = "root";
@@ -49,20 +58,32 @@ namespace UIWPF.Resources.Windows
             //connection.Open();
             //adapter.Update(FormPage.GetData());
             //connection.Close();
-            DataTable dt = new DataTable();
             //string sql = "select canUpdate from table_name where table_name = " + table;
+
+
             List<MySqlParameter> par_add = new List<MySqlParameter>();
             //table = "drilling_tool_structure_b1";
             par_add.Add(new MySqlParameter("@table", table));
             string sql = "select * from table_name where table_name = @table";
             dt = DbManager.Ins.ExcuteDataTable(sql, par_add.ToArray());
             DataRow[] dtrows = dt.Select();
+            //MessageBox.Show(table + ": ");
             int can = (int)dtrows[0][1];
             //MessageBox.Show(table + ": " + can);
             if (can == 1)
             {
-                int rows = FormPage.UpdateTable();
-                Console.WriteLine(rows);
+                if (table_num == "b1")
+                {
+                    Print.update_B();
+
+                    //提交后关闭编辑权限
+                    updateCan();
+                }
+                else
+                {
+                    FormPage.UpdateTable();
+                }
+
             }
             else
             {
@@ -95,8 +116,15 @@ namespace UIWPF.Resources.Windows
         //打印事件
         private void Print_Click(object sender, RoutedEventArgs e)
         {
+            var item = sender as MenuItem;
+            if (item != null)
+            {
+                table_num = item.Name;
+                table = item.Name;
+            }
             this.testFrame.Navigate(Print);
         }
+
 
         #region 标题栏事件
 
@@ -214,6 +242,18 @@ namespace UIWPF.Resources.Windows
             }
         }
 
-        
+        private void newsletter_Click(object sender, RoutedEventArgs e)
+        {
+            var item = sender as MenuItem;
+            if (item != null)
+            {
+                table_num = item.Name;
+                table = item.Name;
+            }
+            Windows.NewsletterEditWindow newsletter = new NewsletterEditWindow();
+            newsletter.Show();
+        }
+
+
     }
 }
